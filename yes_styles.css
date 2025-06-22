@@ -11,19 +11,24 @@ body {
     background: #000;
 }
 
-p{
-    font-size: 8.5px;
-    line-height: 7.5px;
-    color: red;
-    background: url(your-image.jpg);
-    background-attachment: fixed;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(0, 0, 0, 0.0);
-    background-size: 53%;
-    background-repeat: no-repeat;
-    background-position: top;
-    letter-spacing: 0.5	px;
+p {
+  font-size: 11px;
+  line-height: 10px;
+  color: red;
+  background: url(your-image.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0.0);
+  letter-spacing: 0.5px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  word-break: break-word;
 }
+
 
 .karaoke {
     background-image: linear-gradient(to right, #ff4ec7, #ffd700, #ff4ec7);
@@ -80,4 +85,25 @@ p{
     flex-direction: column;
   }
 }
+@media (max-width: 768px) {
+  p {
+    font-size: 13px;
+    line-height: 12px;
+    padding: 16px;
+    background-size: contain;
+    background-position: top center;
+  }
+
+  body {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .karaoke {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
 

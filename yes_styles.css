@@ -1,0 +1,83 @@
+x`@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+ 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;		
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background: #000;
+}
+
+p{
+    font-size: 8.5px;
+    line-height: 7.5px;
+    color: red;
+    background: url(your-image.jpg);
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.0);
+    background-size: 53%;
+    background-repeat: no-repeat;
+    background-position: top;
+    letter-spacing: 0.5	px;
+}
+
+.karaoke {
+    background-image: linear-gradient(to right, #ff4ec7, #ffd700, #ff4ec7);
+    background-size: 200% auto;
+    background-position: left center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: karaokeHighlight 3s linear infinite;
+}
+
+@keyframes karaokeHighlight {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 100% center;
+    }
+}
+
+
+.karaoke {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    opacity: 0;
+    animation: karaokeFadeIn 0.5s forwards;
+}
+
+@keyframes karaokeFadeIn {
+    to {
+        opacity: 1;
+    }
+}
+.word1 { animation-delay: 0.0s; }
+.word2 { animation-delay: 0.3s; }
+.word3 { animation-delay: 0.7s; }
+.word4 { animation-delay: 1.0s; }
+.word5 { animation-delay: 1.3s; }
+.word6 { animation-delay: 1.7s; }
+.word7 { animation-delay: 2.0s; }
+.word8 { animation-delay: 2.4s; }
+
+@media (max-width: 768px) {
+  p {
+    font-size: 12px;
+    line-height: 10px;
+    background-size: 80% auto;
+    padding: 10px;
+  }
+
+  body {
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+  }
+}
+

@@ -1,106 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Fullscreen background image */
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background: url('your-image.jpg') no-repeat center center fixed;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-
-    .container {
-      background-color: rgba(255, 255, 255, 0.8); /* semi-transparent for readability */
-      padding: 30px;
-      border-radius: 15px;
-      max-width: 90%;
-    }
-
-    h1 {
-      margin-bottom: 20px;
-      font-size: 24px;
-      color: #333;
-    }
-
-    .buttons {
-      margin-bottom: 20px;
-    }
-
-    .yes-button,
-    .no-button {
-      padding: 10px 20px;
-      font-size: 16px;
-      margin: 0 10px;
-      cursor: pointer;
-      border: none;
-      border-radius: 8px;
-      transition: background 0.3s;
-    }
-
-    .yes-button {
-      background-color: #4CAF50;
-      color: white;
-    }
-
-    .yes-button:hover {
-      background-color: #45a049;
-    }
-
-    .no-button {
-      background-color: #f44336;
-      color: white;
-    }
-
-    .no-button:hover {
-      background-color: #d32f2f;
-    }
-
-    .gif_container img {
-      width: 100%;
-      max-width: 250px;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 20px;
-      }
-
-      .yes-button,
-      .no-button {
-        font-size: 14px;
-        padding: 8px 16px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Hello Irish, pwede ka mag 'hi'?</h1>
-    <div class="buttons">
-      <button class="yes-button" onclick="handleYesClick()">Yes</button>
-      <button class="no-button" onclick="handleNoClick()">No</button>
+    <div class="container">
+        <h1>Hello Irish, pwede ka mag 'hi'?</h1>
+        <div class="buttons">
+            <button class="yes-button" onclick="handleYesClick()">Yes</button>
+            <button class="no-button" onclick="handleNoClick()">No</button>
+        </div>
+        <div class="gif_container">
+            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="Cute GIF">
+        </div>
     </div>
-    <div class="gif_container">
-      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="Cute GIF">
-    </div>
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-

@@ -10,6 +10,7 @@ body {
     height: 60vh;
     background: #000;
 }
+<img class="yes-photo" src="your-image.jpg" alt="Yes Page Photo">
 
 p{
     font-size: 8.5px;
@@ -24,7 +25,14 @@ p{
     background-position: top;
     letter-spacing: 0.5	px;
 }
-
+.yes-photo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  max-width: 500px; /* optional: limits size on large screens */
+}
 .karaoke {
     background-image: linear-gradient(to right, #ff4ec7, #ffd700, #ff4ec7);
     background-size: 200% auto;
